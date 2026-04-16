@@ -1,0 +1,32 @@
+\frametitle{\thesection. \insertsection}
+    \framesubtitle{\thesection.\thesubsection. Các công thức cần nhớ}
+
+    \begin{block}{Tổng hợp công thức vector}
+        \vspace{0.2cm} % Thêm khoảng cách giữa tiêu đề và nội dung
+        \begin{columns}[T, onlytextwidth]
+            \begin{column}{0.5\textwidth}
+                \textbf{1. Cộng vector:} $\vec{AB}+\vec{BC}=\vec{AC}$ (tam giác); $\vec{OA}+\vec{OB}=\vec{OC}$ (hbh) \\
+                \vspace{0.15cm}
+                \textbf{2. Trừ vector:} $\vec{AB}-\vec{AC}=\vec{CB}$; $\vec{a}-\vec{b}=\vec{a}+(-\vec{b})$ \\
+                \vspace{0.15cm}
+                \textbf{3. Nhân với số:} $k\vec{a}=(kx,ky)$, $|k\vec{a}|=|k|\cdot|\vec{a}|$ ($k>0$ cùng hướng, $k<0$ ngược) \\
+                \vspace{0.15cm}
+                \textbf{4. Tọa độ:} $\vec{AB}=(x_B-x_A,\;y_B-y_A)$; $|\vec{a}|=\sqrt{x^2+y^2}$
+            \end{column}
+
+            \hspace{0.5cm}
+
+            \begin{column}{0.5\textwidth}
+                \textbf{5. Tích vô hướng:} $\vec{a}\cdot\vec{b}=|\vec{a}||\vec{b}|\cos\theta=x_1x_2+y_1y_2$ \\
+                \vspace{0.15cm}
+                \textbf{6. Côsin góc:} $\cos\theta=\dfrac{\vec{a}\cdot\vec{b}}{|\vec{a}||\vec{b}|}=\dfrac{x_1x_2+y_1y_2}{\sqrt{x_1^2+y_1^2}\sqrt{x_2^2+y_2^2}}$ \\
+                \vspace{0.15cm}
+                \textbf{7. Vuông góc:} $\vec{a}\perp\vec{b}\iff\vec{a}\cdot\vec{b}=0\iff x_1x_2+y_1y_2=0$
+            \end{column}
+        \end{columns}
+        \vspace{0.1cm}
+    \end{block}
+
+    \begin{center}
+        \footnotesize $\vec{a}=(x_1,y_1)$, $\vec{b}=(x_2,y_2)$
+    \end{center}

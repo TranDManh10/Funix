@@ -1,0 +1,70 @@
+\ProvidesPackage{common_style}
+
+% =================================================================
+% 1. HỖ TRỢ TIẾNG VIỆT VÀ FONT (Dùng XeLaTeX hoặc LuaLaTeX)
+% =================================================================
+\usepackage{fontspec}
+\usepackage{unicode-math}
+
+% Sử dụng Latin Modern - Font chuẩn hỗ trợ Unicode và Toán học tốt
+\setmainfont{Latin Modern Roman}
+\setmathfont{Latin Modern Math}
+
+% =================================================================
+% 2. GIAO DIỆN BEAMER (Madrid + Whale)
+% =================================================================
+\usetheme{Madrid}
+\usecolortheme{whale}
+\setbeamertemplate{navigation symbols}{} % Ẩn các nút điều hướng nhỏ
+
+% --- Cấu hình Headline (Thanh ngang trên cùng của mỗi Slide) ---
+% Hiển thị số Section và tên Section ở chính giữa
+\setbeamertemplate{headline}{
+%   \begin{beamercolorbox}[ht=3ex,dp=1.5ex,center]{section in head/foot}
+%     \usebeamerfont{section in head/foot}\thesection. \insertsectionhead
+%   \end{beamercolorbox}
+}
+% --- Cấu hình Frametitle (Tiêu đề chính trong mỗi Slide) ---
+% Hỗ trợ hiển thị phân cấp: Dòng 1 to (Section), Dòng 2 nhỏ hơn (Subsection)
+\setbeamertemplate{frametitle}{
+    \nointerlineskip
+    \begin{beamercolorbox}[sep=0.25cm,wd=\paperwidth]{frametitle}
+        \usebeamerfont{frametitle}\insertframetitle \\ 
+        \usebeamerfont{framesubtitle}\fontsize{10}{12}\selectfont\insertframesubtitle
+    \end{beamercolorbox}
+}
+
+% =================================================================
+% 3. GÓI LỆNH TOÁN HỌC VÀ ĐỒ HỌA (TIKZ)
+% =================================================================
+\usepackage{amsmath, amssymb, amsfonts, amsthm}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, calc, angles, quotes}
+
+% --- Các lệnh tắt toán học ---
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\vect}[1]{\overrightarrow{#1}} % Lệnh vẽ vector có mũi tên dài
+
+% =================================================================
+% 4. ĐỊNH NGHĨA MÔI TRƯỜNG TIẾNG VIỆT
+% =================================================================
+\newtheorem{dinhnghia}{Định nghĩa}
+\newtheorem{dinhly}{Định lý}
+\newtheorem{vidu}{Ví dụ}
+\renewcommand{\proofname}{Chứng minh}
+
+% =================================================================
+% 5. CẤU HÌNH ĐÁNH SỐ CHUẨN (TOC & DEPTH)
+% =================================================================
+
+% 1. Đánh số trong Mục lục (TOC)
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+\setbeamertemplate{subsubsection in toc}[subsubsections numbered]
+
+% 2. Độ sâu của mục lục và đánh số (Hỗ trợ đến Subsubsection)
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+\endinput
+

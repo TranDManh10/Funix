@@ -1,0 +1,65 @@
+\frametitle{\thesection. \insertsection}
+    \framesubtitle{\thesection.\thesubsection. Các quy tắc tính (Rules of Logarithms)}
+
+    % Khối lý thuyết điều kiện chung ở trên cùng
+    \begin{block}{Điều kiện áp dụng}
+        \footnotesize
+        Cho số thực dương $a \neq 1$ và các số thực dương $M, N > 0$. Ta có các quy tắc tính logarit sau đây:
+    \end{block}
+
+    \vspace{0.4cm}
+
+    % Dàn ngang 3 khối quy tắc ở dưới để học sinh dễ so sánh
+    \begin{center}
+    \setlength{\tabcolsep}{6pt} % Chỉnh khoảng cách giữa các cột
+    \begin{tabular}{c c c}
+
+        % --- QUY TẮC 1: TÍCH ---
+        \begin{tikzpicture}
+            \node[draw=blue, thick, rounded corners, fill=blue!5, inner sep=10pt, text width=4.5cm, align=center] {
+                \footnotesize \textbf{\textcolor{blue}{1. Logarit của một tích}} \\[0.2cm]
+                Logarit của một tích bằng \\ \textbf{tổng} các logarit: \\[0.2cm]
+                $\boxed{\log_a (M \cdot N) = \log_a M + \log_a N}$
+            };
+        \end{tikzpicture}
+        &
+
+        % --- QUY TẮC 2: THƯƠNG ---
+        \begin{tikzpicture}
+            \node[draw=red, thick, rounded corners, fill=red!5, inner sep=10pt, text width=4.5cm, align=center] {
+                \footnotesize \textbf{\textcolor{red}{2. Logarit của một thương}} \\[0.2cm]
+                Logarit của một thương bằng \\ \textbf{hiệu} các logarit: \\[0.2cm]
+                $\boxed{\log_a \left(\frac{M}{N}\right) = \log_a M - \log_a N}$
+            };
+        \end{tikzpicture}
+        &
+
+        % --- QUY TẮC 3: LŨY THỪA ---
+        \begin{tikzpicture}
+            \node[draw=green!60!black, thick, rounded corners, fill=green!5, inner sep=10pt, text width=4.5cm, align=center] {
+                \footnotesize \textbf{\textcolor{green!60!black}{3. Logarit của lũy thừa}} \\[0.2cm]
+                Đưa số mũ $\alpha$ ra \textbf{ngoài} \\ dấu logarit: \\[0.2cm]
+                $\boxed{\log_a (M^\alpha) = \alpha \log_a M}$
+            };
+        \end{tikzpicture}
+        \\
+
+        % --- GHI CHÚ BÊN DƯỚI TỪNG KHỐI ---
+        \begin{minipage}{4.5cm}
+            \vspace{0.2cm}
+            \centering \scriptsize \textcolor{gray}{Mở rộng: $\log_a(x_1 x_2...x_n) = \sum \log_a x_i$}
+        \end{minipage}
+        &
+        \begin{minipage}{4.5cm}
+            \vspace{0.2cm}
+            \centering \scriptsize \textcolor{gray}{Đặc biệt: $\log_a \left(\frac{1}{N}\right) = - \log_a N$}
+        \end{minipage}
+        &
+        \begin{minipage}{4.5cm}
+            \vspace{0.2cm}
+            \centering \scriptsize \textcolor{gray}{Đặc biệt: $\log_a (\sqrt[n]{M}) = \frac{1}{n} \log_a M$}
+        \end{minipage}
+
+    \end{tabular}
+    \end{center}
+

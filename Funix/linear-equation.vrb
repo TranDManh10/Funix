@@ -1,0 +1,60 @@
+\frametitle{\thesection. \insertsection}
+    \framesubtitle{\thesection.\thesubsection. Khoảng cách (Distance from a point to a line)}
+    \vspace{-0.3cm}
+
+    \begin{columns}[T, onlytextwidth]
+        \begin{column}{0.48\textwidth}
+            \begin{block}{Định nghĩa}
+                \footnotesize
+                Cho điểm $M(x_0; y_0)$ và $\Delta: Ax + By + C = 0$ có VTPT $\vec{n}=(A; B)$.
+
+                \vspace{0.2cm}
+                Gọi $H$ là hình chiếu của $M$ lên $\Delta$ và $M_1(x_1; y_1) \in \Delta$. Khoảng cách $d(M, \Delta)$ là độ dài đại số của hình chiếu $\overrightarrow{M_1M}$ lên phương $\vec{n}$:
+                \[ MH = \frac{|\overrightarrow{M_1M} \cdot \vec{n}|}{|\vec{n}|} = \frac{|A(x_0-x_1) + B(y_0-y_1)|}{\sqrt{A^2 + B^2}} \]
+
+
+                Vì $Ax_1 + By_1 = -C$, ta rút ra:
+
+                \textbf{Công thức chính:} \\
+                \[
+                    \boxed{ d(M, \Delta) = \frac{|Ax_0 + By_0 + C|}{\sqrt{A^2 + B^2}} }
+                \]
+            \end{block}
+        \end{column}
+
+        \begin{column}{0.48\textwidth}
+            \centering
+            \vspace{0.4cm}
+            \begin{tikzpicture}[>=Stealth, thick, scale=0.85, every node/.style={scale=0.85}]
+                % Trục tọa độ mờ
+                \draw[->, gray!40, thin] (-0.5,0) -- (5.5,0) node[right, black] {$x$};
+                \draw[->, gray!40, thin] (0,-0.5) -- (0,5.0) node[above, black] {$y$};
+
+                % Đường thẳng Delta: x + y - 4 = 0 (Góc -45 độ chuẩn)
+                % Vẽ từ (0.2, 3.8) đến (3.8, 0.2)
+                \draw[blue, ultra thick] (-0.2, 4.2) -- (4.2, -0.2) node[above right] {$\Delta$};
+
+                % Tọa độ các điểm chính xác: M(3.8, 3.8), H(2, 2)
+                \coordinate (M) at (3.8, 3.8);
+                \coordinate (H) at (2, 2);
+
+                % Vẽ đoạn MH (Dashed orange)
+                \draw[dashed, orange, ultra thick] (M) -- (H) node[midway, right=0.1cm] {$d(M, \Delta)$};
+
+                % Vẽ vector n xuất phát từ H (Cùng phương với HM)
+                \draw[->, green!60!black, ultra thick] (H) -- ++(0.8, 0.8) node[above left] {$\vec{n}$};
+
+                % Vẽ ký hiệu góc vuông tại H (Xoay 45 độ để khớp với độ dốc -1 của Delta)
+                \begin{scope}[shift={(H)}, rotate=45]
+                    \draw[gray, thin] (0, 0.25) -- (0.25, 0.25) -- (0.25, 0);
+                \end{scope}
+
+                % Các điểm và nhãn
+                \filldraw[black] (M) circle (2pt) node[above right] {$M(x_0; y_0)$};
+                \filldraw[black] (H) circle (1.5pt) node[below left] {$H$};
+
+                % Chú thích ngắn gọn dưới hình
+                \node[gray, font=\scriptsize, align=left] at (2.0, -0.8) {$\bullet$ $MH \perp \Delta \implies MH = d(M, \Delta)$};
+            \end{tikzpicture}
+        \end{column}
+    \end{columns}
