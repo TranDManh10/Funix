@@ -57,15 +57,15 @@ $$
 
 ### 3.1. Hàm lũy thừa và logarit
 
-| Hàm số $f(x)$ | Nguyên hàm |
-|---|---|
-| $1$ | $x+C$ |
+| Hàm số $f(x)$              | Nguyên hàm                         |
+| -------------------------- | ---------------------------------- |
+| $1$                        | $x+C$                              |
 | $x^\alpha$, $\alpha\neq-1$ | $\dfrac{x^{\alpha+1}}{\alpha+1}+C$ |
-| $\dfrac1x$ | $\ln\lvert x\rvert+C$ |
-| $\sqrt{x}$ | $\dfrac23x\sqrt{x}+C$ |
-| $\dfrac1{\sqrt{x}}$ | $2\sqrt{x}+C$ |
-| $\dfrac1{x^2}$ | $-\dfrac1x+C$ |
-| $\dfrac1{x^3}$ | $-\dfrac1{2x^2}+C$ |
+| $\dfrac1x$                 | $\ln\lvert x\rvert+C$              |
+| $\sqrt{x}$                 | $\dfrac23x\sqrt{x}+C$              |
+| $\dfrac1{\sqrt{x}}$        | $2\sqrt{x}+C$                      |
+| $\dfrac1{x^2}$             | $-\dfrac1x+C$                      |
+| $\dfrac1{x^3}$             | $-\dfrac1{2x^2}+C$                 |
 
 **Hai công thức quan trọng:**
 

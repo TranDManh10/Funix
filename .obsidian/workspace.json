@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Integration-Execise.md",
+                "file": "Math11/Baitap_Gioihan_da.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Integration-Execise"
+              "title": "Baitap_Gioihan_da"
             }
           }
         ],
@@ -176,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Integration-Execise.md",
+                "file": "Math11/Baitap_Gioihan_da.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -205,12 +205,18 @@
   },
   "active": "38842c27b1b0ebc5",
   "lastOpenFiles": [
+    "Math11/Baitap_Gioihan.md",
+    "Math11/Limit.md",
+    "Math11/Fomula.md",
+    "Math11/Baitap_Gioihan_da.md",
+    "Math12/Antiderivative-Ex.md",
+    "Math11/Limitmd",
+    "Math11/Ly_thuyet_Gioi_han_Toan_11_Obsidian.md",
     "Math12/Integration.md",
+    "Math12/Anti-derivatives.md",
     "Integration-Execise.md",
     "Math12/Matrix.md",
-    "Math12/Anti-derivatives.md",
     "Math12/Figure/Integration-1.png",
-    "Math12/Antiderivative-Ex.md",
     "Math11/De1.md",
     "Math12/Antiderivative-Ex-An.md",
     "Math12/Figure",
@@ -222,7 +228,6 @@
     "README.md",
     "Prompt.md",
     "Math11/De1-DA.md",
-    "Math11",
-    "Math11/Fomula.md"
+    "Math11"
   ]
 }
